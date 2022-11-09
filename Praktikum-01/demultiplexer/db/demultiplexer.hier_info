@@ -1,0 +1,43 @@
+|demultiplexer
+SW[0] => LEDG.DATAB
+SW[0] => LEDG.DATAB
+SW[0] => LEDG.DATAB
+SW[0] => LEDG.DATAB
+SW[0] => LEDG.DATAB
+SW[0] => LEDG.DATAB
+SW[0] => LEDG.DATAB
+SW[0] => LEDG.DATAB
+PB[0] => Equal0.IN2
+PB[0] => Equal1.IN2
+PB[0] => Equal2.IN1
+PB[0] => Equal3.IN2
+PB[0] => Equal4.IN1
+PB[0] => Equal5.IN2
+PB[0] => Equal6.IN0
+PB[0] => Equal7.IN2
+PB[1] => Equal0.IN1
+PB[1] => Equal1.IN1
+PB[1] => Equal2.IN2
+PB[1] => Equal3.IN1
+PB[1] => Equal4.IN0
+PB[1] => Equal5.IN0
+PB[1] => Equal6.IN2
+PB[1] => Equal7.IN1
+PB[2] => Equal0.IN0
+PB[2] => Equal1.IN0
+PB[2] => Equal2.IN0
+PB[2] => Equal3.IN0
+PB[2] => Equal4.IN2
+PB[2] => Equal5.IN1
+PB[2] => Equal6.IN1
+PB[2] => Equal7.IN0
+LEDG[0] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[3] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[4] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[5] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[6] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[7] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+
+

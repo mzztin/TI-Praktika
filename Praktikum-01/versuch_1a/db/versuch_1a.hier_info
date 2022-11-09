@@ -1,0 +1,7 @@
+|versuch_1a
+X0 => Y.IN0
+X1 => Y.IN1
+X2 => Y.IN1
+Y << Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
