@@ -1,22 +1,25 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity demultiplexer is
+
+entity demultiplexer is 
+
 	port(
-		SW: 		in std_logic_vector(0 downto 0);
-		PB: 		in std_logic_vector(2 downto 0);
-		LEDG: 	out std_logic_vector(7 downto 0)
-	);	
+		A:		in std_logic;			-- zu demultiplexendes Eingangssignal SW0 
+		S:		in std_logic_vector(2 downto 0); -- Adresse: Key 2..0			
+		X:		out std_logic_vector(7 downto 0) -- Output auf LEDs
+	);
+
 end demultiplexer;
 
 architecture verhalten of demultiplexer is
 begin
-	LEDG(0) <= SW(0) when PB = "000" else '1';
-	LEDG(1) <= SW(0) when PB = "001" else '1';
-	LEDG(2) <= SW(0) when PB = "010" else '1';
-	LEDG(3) <= SW(0) when PB = "011" else '1';
-	LEDG(4) <= SW(0) when PB = "100" else '1';
-	LEDG(5) <= SW(0) when PB = "101" else '1';
-	LEDG(6) <= SW(0) when PB = "110" else '1';
-	LEDG(7) <= SW(0) when PB = "111" else '1';
+	X(0) <= A when S = "000" else '1';
+	X(1) <= A when S = "001" else '1';
+	X(2) <= A when S = "010" else '1';
+	X(3) <= A when S = "011" else '1';
+	X(4) <= A when S = "100" else '1';
+	X(5) <= A when S = "101" else '1';
+	X(6) <= A when S = "110" else '1';
+	X(7) <= A when S = "111" else '1';
 end verhalten;
